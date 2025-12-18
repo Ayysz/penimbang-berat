@@ -93,6 +93,55 @@
               },
               "parameters": [
                 "settings.BGM",
+                "True",
+                "1"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SpriteToggleSwitch::SpriteToggleSwitch::SetChecked"
+              },
+              "parameters": [
+                "Music_Switch",
+                "no",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVolumeMusicCanal"
+              },
+              "parameters": [
+                "",
+                "1",
+                "=",
+                "100"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVolumeMusicCanal"
+              },
+              "parameters": [
+                "",
+                "2",
+                "=",
+                "100"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "settings.BGM",
                 "False",
                 "1"
               ]
@@ -141,7 +190,56 @@
                 "value": "BooleanVariable"
               },
               "parameters": [
-                "settings.BGM",
+                "settings.SFX",
+                "False",
+                "1"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVolumeSoundCanal"
+              },
+              "parameters": [
+                "",
+                "3",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVolumeSoundCanal"
+              },
+              "parameters": [
+                "",
+                "4",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "SpriteToggleSwitch::SpriteToggleSwitch::SetChecked"
+              },
+              "parameters": [
+                "Sound_Switch",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "settings.SFX",
                 "True",
                 "1"
               ]
@@ -153,29 +251,29 @@
                 "value": "SpriteToggleSwitch::SpriteToggleSwitch::SetChecked"
               },
               "parameters": [
-                "Music_Switch",
+                "Sound_Switch",
                 "no",
                 ""
               ]
             },
             {
               "type": {
-                "value": "ModVolumeMusicCanal"
+                "value": "ModVolumeSoundCanal"
               },
               "parameters": [
                 "",
-                "1",
+                "3",
                 "=",
                 "100"
               ]
             },
             {
               "type": {
-                "value": "ModVolumeMusicCanal"
+                "value": "ModVolumeSoundCanal"
               },
               "parameters": [
                 "",
-                "2",
+                "4",
                 "=",
                 "100"
               ]
