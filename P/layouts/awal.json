@@ -1803,10 +1803,6 @@
       "type": "EllipseMovement::EllipseMovement"
     },
     {
-      "name": "FlashOpacity",
-      "type": "Flash::FlashOpacity"
-    },
-    {
       "name": "Flippable",
       "type": "FlippableCapability::FlippableBehavior"
     },
@@ -1825,10 +1821,6 @@
     {
       "name": "ScreenWrap",
       "type": "ScreenWrap::ScreenWrap"
-    },
-    {
-      "name": "Text",
-      "type": "TextContainerCapability::TextContainerBehavior"
     },
     {
       "name": "Tween",

@@ -24,10 +24,20 @@
       "actions": [
         {
           "type": {
-            "value": "DebuggerTools::ConsoleLog"
+            "value": "SpriteToggleSwitch::SpriteToggleSwitch::Activate"
           },
           "parameters": [
-            "ToJSON(settings)",
+            "Sound_Switch",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SpriteToggleSwitch::SpriteToggleSwitch::Activate"
+          },
+          "parameters": [
+            "Music_Switch",
             "",
             ""
           ]
